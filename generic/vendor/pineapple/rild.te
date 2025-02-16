@@ -32,4 +32,4 @@
 
 allow rild vendor_shm_chr_device:chr_file r_file_perms;
 
-allow rild boot_status_prop:file { read getattr map};
+allow rild boot_status_prop:file { read getattr map open};
