@@ -78,6 +78,7 @@ allow system_server vendor_sysfs_sensors:dir search;
 allow system_server vendor_sysfs_sensors:file rw_file_perms;
 # allow access to low persistence mode sysfs node
 allow system_server vendor_sysfs_graphics:file rw_file_perms;
+allow system_server vendor_sysfs_usb_supply:file { getattr read open };
 
 userdebug_or_eng(`
     diag_use(system_server)
